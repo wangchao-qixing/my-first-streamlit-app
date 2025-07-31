@@ -42,8 +42,8 @@ st.title('剧本资产清单拆解器')
 st.header('V1.0 - 实时分析版')
 
 #4、输入控件
-st.text_area('请输入剧本内容:', key='user_text_input', on_change=run_analysis, placeholder="在此粘贴你的剧本...")
-st.slider('选择主要角色的最小台词数:', 1, 20, 3, key='min_line_slider', on_change=run_analysis)
+st.text_area('请输入剧本内容:', key='user_text_input', on_change=run_analysis)
+st.slider('选择主要角色的最小台词数:', 1, 20, key='min_line_slider', on_change=run_analysis)
 st.button('清除所有内容', on_click=clear_all)
 
 #5、结果展示区
